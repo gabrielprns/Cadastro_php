@@ -3,9 +3,9 @@ abstract class classConexao{
   protected function conectaDB()
   {
     try{
-        $con=new  mysqli("localhost", "root","", "crud");
+        $con = new PDO("mysql: host=localhost ; dbname=Crud", "root", "");
         return $con;
-    }catch(Exception $Erro){
+    }catch(PDOException $Erro){
         return $Erro -> getMessage();
     }
   }

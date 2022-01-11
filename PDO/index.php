@@ -2,6 +2,8 @@
   <div class="Content">
     <?php 
       include("class/classConexao.php");
+      include("class/classCrud.php");
+      $Crud=new classCrud();
     ?>
   </div>
 
